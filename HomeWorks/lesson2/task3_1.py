@@ -1,4 +1,4 @@
-# Add task1.py
+# Add task3_1.py
 
 while True:
     seasons_list = ['зима', 'весна', 'лето', 'осень']
@@ -12,6 +12,6 @@ while True:
         print('Это', seasons_list[2])
     elif month == 9 or month == 10 or month == 11:
         print('Это', seasons_list[3])
-    else:
+     else:
         print('Введен некорректный номер месяца!')
         continue
