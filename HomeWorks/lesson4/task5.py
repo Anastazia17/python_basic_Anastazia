@@ -1,4 +1,4 @@
-# Add task.5.py
+# Add task5.py
 
 from functools import reduce
 
