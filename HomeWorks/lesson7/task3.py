@@ -15,11 +15,11 @@ class Cell:
     def __truediv__(self, other):
         return Cell(round(self.quantity // other.quantity))
 
-    def make_order(self, cells):
+    def make_order(self, cells_in_row):
         row = ''
-        for i in range(int(self.quantity / cells)):
-            row += f'{"*" * cells} \\n'
-        row += f'{"*" * (self.quantity % cells)}'
+        for i in range(int(self.quantity / cells_in_row)):
+            row += f'{"*" * cells_in_row} \\n'
+        row += f'{"*" * (self.quantity % cells_in_row)}'
         return row
 
 cell1 = Cell(25)
