@@ -23,6 +23,7 @@ class Data:
                 return f'Неверный месяц'
         else:
             return f'Неверный день'
+
     def __str__(self):
         return f'Текущая дата {Data.extract(self.d_m_y)}'
 

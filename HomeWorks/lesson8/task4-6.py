@@ -1,7 +1,6 @@
 # Add task4-6.py
 
 class Stock:
-
     def __init__(self, name, cost, quantity, list_number, *args):
         self.name = name
         self.cost = cost
@@ -22,8 +21,8 @@ class Stock:
             device = {'Наименование устройства': elem1, 'Стоимость': elem2, 'Количество на складе': elem3}
             self.dict_stock.update(device)
             self.list_stock.append(self.dict_stock)
-            print(f'Текущий список:\n{self.full_stock}')
-        except:
+            print(f'Текущий список:\n{self.list_stock}')
+        except ValueError as error:
             return f'Введены некорректные данные!'
         print('Чтобы продолжить, нажмите Enter\nДля выхода нажмите Q')
         choice = input('')

@@ -3,6 +3,7 @@
 class ErrNotNumber:
     def __init__(self, *args):
         self.new_list = []
+
     def new_input(self):
         while True:
             try:
